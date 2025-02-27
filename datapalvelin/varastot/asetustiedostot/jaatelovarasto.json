@@ -1,0 +1,10 @@
+{
+"port": 3000,
+    "host": "localhost",
+    "varasto": {
+        "kansio": "jaatelovarasto",
+        "asetustiedosto": "asetukset.json",
+        "varastotiedosto": "jaatelot.json",
+        "kuvakansio": "kuvat"
+    }
+}

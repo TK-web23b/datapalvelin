@@ -1,0 +1,12 @@
+{
+    "apukirjasto": {
+        "kansio": "apukirjasto",
+        "luekomentorivi": "luekomentorivi.js",
+        "muodostaPolut": "muodostaPolut.js",
+        "muodostaKirjastot": "muodostaKirjastot.js"
+    },
+    "palvelinkirjasto": {
+        "kansio": "palvelinkirjasto",
+        "palvelinfunktio": "palvelin.js"
+    }
+}
