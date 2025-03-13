@@ -6,27 +6,41 @@ import { promises as fs } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 const JUURIPOLKU = fileURLToPath(new URL(".", import.meta.url));
 
-const urlpolku = polku => new URL(`file://${JUURIPOLKU}/${polku}`);
+const urlpolku = polku => new URL(polku, `file://${JUURIPOLKU}`);
 
 async function main() {
     const config = JSON.parse(await fs.readFile('./config.json', 'utf-8'));
 
     const apukirjastokansio = path.join(JUURIPOLKU, config.apukirjasto.kansio);
-    const { luekomentorivi } = await import(urlpolku(path.join(apukirjastokansio, config.apukirjasto.luekomentorivi)));
+    console.log('apukirjastokansio:', apukirjastokansio); // Debugging statement
 
+    console.log('config.apukirjasto.lueKomentorivi:', config.apukirjasto.lueKomentorivi); // Debugging statement
+    const { lueKomentorivi } = await import(urlpolku(path.join(apukirjastokansio, config.apukirjasto.lueKomentorivi)));
+
+    console.log('config.apukirjasto.muodostaPolut:', config.apukirjasto.muodostaPolut); // Debugging statement
     const { muodostaPolut } = await import(urlpolku(path.join(apukirjastokansio, config.apukirjasto.muodostaPolut)));
 
+    console.log('config.apukirjasto.muodostaKirjastot:', config.apukirjasto.muodostaKirjastot); // Debugging statement
     const { muodostaKirjastot } = await import(urlpolku(path.join(apukirjastokansio, config.apukirjasto.muodostaKirjastot)));
 
     // Datapalvelinpolut
     const palvelinkirjastokansio = path.join(JUURIPOLKU, config.palvelinkirjasto.kansio);
+    console.log('palvelinkirjastokansio:', palvelinkirjastokansio); // Debugging statement
+
     const palvelinfunktiopolku = path.join(palvelinkirjastokansio, config.palvelinkirjasto.palvelinfunktio);
+    console.log('palvelinfunktiopolku:', palvelinfunktiopolku); // Debugging statement
+
     const { default: Palvelin } = await import(urlpolku(palvelinfunktiopolku));
 
     try {
-        const varastoNimi = await luekomentorivi();
-        const asetuspolku = path.join(JUURIPOLKU, config.varastot.kansio, varastoNimi, config.varastot.asetustiedostokansio);
-        const varastoasetuksetpolku = urlpolku(path.join(asetuspolku, varastoNimi));
+        const varastoNimi = await lueKomentorivi();
+        console.log('varastoNimi:', varastoNimi); // Debugging statement
+
+        const asetuspolku = path.join(JUURIPOLKU, config.varastot.kansio, varastoNimi, config.varastot.asetustiedostotkansio);
+        console.log('asetuspolku:', asetuspolku); // Debugging statement
+
+        const varastoasetuksetpolku = urlpolku(path.join(asetuspolku, varastoNimi + '.json'));
+        console.log('varastoasetuksetpolku:', varastoasetuksetpolku); // Debugging statement
 
         try {
             const varastoasetukset = await import(varastoasetuksetpolku);
@@ -109,6 +123,7 @@ async function main() {
                                 Palvelin.lahetaVirheilmoitus(res, `Resurssia ${reitti} ei löydy`);
                         }
                     } catch (virhe) {
+                        console.log(virhe);
                         Palvelin.lahetaVirheilmoitus(res, virhe.message);
                     }
                 });

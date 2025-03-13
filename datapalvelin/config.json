@@ -1,12 +1,27 @@
 {
     "apukirjasto": {
         "kansio": "apukirjasto",
-        "luekomentorivi": "luekomentorivi.js",
+        "lueKomentorivi": "lueKomentorivi.js",
         "muodostaPolut": "muodostaPolut.js",
         "muodostaKirjastot": "muodostaKirjastot.js"
     },
     "palvelinkirjasto": {
         "kansio": "palvelinkirjasto",
         "palvelinfunktio": "palvelin.js"
+    },
+    "datakerros":{
+        "kansio": "datakerros",
+        "tietovarastokerros": "tietovarastokerros.js",
+        "varastokerros": "varastokerros.js"
+    },
+    "varastokirjasto": {
+        "kansio": "varastokirjasto",
+        "datasovitin": "varasto.js",
+        "lukijaKirjoittaja": "lukijaKirjoittaja.js",
+        "kuvatyypit": "mimetyypit.json"
+    },
+    "varastot": {
+        "kansio": "varastot",
+        "asetustiedostotkansio":"asetustiedostot"
     }
 }
