@@ -1,0 +1,12 @@
+.Kortti {
+  border: solid blue 0.2em;
+  padding: 1em;
+}
+
+.Kortti .selite {
+  font-weight: bold;
+}
+
+.Kortti .data {
+  color: blue;
+}

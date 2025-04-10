@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+}
+
+td,
+th,
+tr {
+  border: solid black 0.1em;
+  padding: 1em;
+}
+
+img {
+  height: 40px;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 1em;
+}
