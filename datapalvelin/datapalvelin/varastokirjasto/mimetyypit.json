@@ -1,0 +1,7 @@
+{
+    ".png":{    "tyyppi":"image/png","koodaus":"binary"},
+    ".jpeg":{    "tyyppi":"image/jpeg","koodaus":"binary"},
+    ".jpg":{    "tyyppi":"image/pjpgng","koodaus":"binary"},
+    ".gif":{    "tyyppi":"image/gif","koodaus":"binary"},
+    ".ico":{    "tyyppi":"image/ico","koodaus":"binary"}
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "nimi":"Mansikka",
+        "hinta":2,
+        "kuva":"mansikka.png"
+    },
+    {
+        "id":2,
+        "nimi":"Mustikka",
+        "hinta":3,
+        "kuva":"mustikka.png" 
+    },
+    {
+        "id":3,
+        "nimi":"Suklaa",
+        "hinta":3,
+        "kuva":"suklaa.png" 
+    },
+    {
+        "id":4,
+        "nimi":"Vanilja",
+        "hinta":4,
+        "kuva":"vanilja.png" 
+    }
+]

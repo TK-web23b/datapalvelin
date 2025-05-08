@@ -1,0 +1,16 @@
+[
+  {
+    "tuotenumero": 1,
+    "merkki": "Bugatti",
+    "värit": ["valkoinen", "punainen", "musta"],
+    "hinta": 200000,
+    "kuva": "bugatti.png"
+  },
+  {
+    "tuotenumero": 2,
+    "merkki": "Lada GT",
+    "värit": ["SININEN"],
+    "hinta": 150,
+    "kuva": "lada.png"
+  }
+]
