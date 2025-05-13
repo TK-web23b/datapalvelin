@@ -1,10 +1,10 @@
-function munna(munnettavaolio) {
-    if (!munnettavaolio) return {};
+function muunna(muunnettavaOlio) {
+  if (!muunnettavaOlio) return {};
 
-    return Object.assign(munnettavaolio, {
-        id: munnettavaolio.id,
-        hinta: Number(munnettavaolio.hinta),
-    });
+  return Object.assign(muunnettavaOlio, {
+    id: +muunnettavaOlio.id,
+    hinta: Number(muunnettavaOlio.hinta),
+  });
 }
 
-export { munna };
+export { muunna };

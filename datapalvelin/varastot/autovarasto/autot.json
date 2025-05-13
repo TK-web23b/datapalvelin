@@ -1,0 +1,107 @@
+[
+  {
+    "autonumero": 2,
+    "hinta": 4000,
+    "merkki": "Menopeli",
+    "malli": "VIP",
+    "valmistaja": "Xyz manufacturing",
+    "km": 90000,
+    "värit": [
+      "keltainen",
+      "sininen"
+    ],
+    "lisätiedot": {
+      "voimanlähde": "työntövoima",
+      "kulutus": 10,
+      "huomautus": "matalapäästöinen"
+    }
+  },
+  {
+    "autonumero": 7,
+    "hinta": 300000,
+    "merkki": "Biili",
+    "malli": "silver",
+    "valmistaja": "Hybrid oy",
+    "km": 90000,
+    "värit": [
+      "sininen",
+      "punainen"
+    ],
+    "lisätiedot": {
+      "voimanlähde": "polkuvoima",
+      "kulutus": 3,
+      "huomautus": "huippulaite"
+    }
+  },
+  {
+    "autonumero": 6,
+    "hinta": 4000,
+    "merkki": "Kottero",
+    "malli": "XXL",
+    "valmistaja": "Formel I",
+    "km": 0,
+    "värit": [
+      "punainen",
+      "sininen",
+      "oranssi"
+    ],
+    "lisätiedot": {
+      "voimanlähde": "vety",
+      "kulutus": 12,
+      "huomautus": "ei kommentteja"
+    }
+  },
+  {
+    "autonumero": 3,
+    "hinta": 4000,
+    "merkki": "Hoppa",
+    "malli": "GT",
+    "valmistaja": "Xyz manufacturing",
+    "km": 45000,
+    "värit": [
+      "sininen",
+      "keltainen",
+      "vihreä"
+    ],
+    "lisätiedot": {
+      "voimanlähde": "sähkö",
+      "kulutus": 5,
+      "huomautus": "laadukas"
+    }
+  },
+  {
+    "autonumero": 4,
+    "hinta": 36000,
+    "merkki": "Kaara",
+    "malli": "VIP",
+    "valmistaja": "Alset inc.",
+    "km": 0,
+    "värit": [
+      "oranssi",
+      "vihreä"
+    ],
+    "lisätiedot": {
+      "voimanlähde": "kaasu",
+      "kulutus": 6,
+      "huomautus": "vanha malli"
+    }
+  },
+  {
+    "autonumero": 1,
+    "hinta": 15000,
+    "merkki": "Kilpuri",
+    "malli": "VIP",
+    "valmistaja": "Electric cars",
+    "km": 45000,
+    "värit": [
+      "sininen",
+      "vihreä",
+      "punainen"
+    ],
+    "lisätiedot": {
+      "voimanlähde": "Bensiini",
+      "kulutus": 4,
+      "huomautus": "ei huomauttamista"
+    }
+  }
+]
