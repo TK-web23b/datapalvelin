@@ -2,5 +2,10 @@
   "perusavain": "tuotenumero",
   "hakuavaimet": ["tuotenumero", "merkki", "hinta"],
   "resurssi": "autot",
-  "numerokentät": ["tuotenumero", "hinta"]
+
+  "numerokentät": ["tuotenumero", "hinta"],
+  "sivunOtsikko": "Autokauppa - Tervetuloa",
+  "naytaHinta": true,
+  "naytaToiminnot": true
+
 }
