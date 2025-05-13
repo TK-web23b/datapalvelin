@@ -1,0 +1,18 @@
+.Taulukko {
+  padding: 1em;
+}
+
+.Taulukko table {
+  border-collapse: collapse;
+}
+
+.Taulukko th {
+  border: solid black 0, 1em;
+  padding: 1em;
+  background: khaki;
+}
+
+.Rivi td {
+  border: solid black 0.1em;
+  padding: 1em;
+}
